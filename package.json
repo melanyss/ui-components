@@ -1,0 +1,40 @@
+{
+  "name": "ui.melanys.me",
+  "description": "An open-source collection of web design components built with Next.js, TypeScript, and Tailwind CSS. Showcases interactive UI elements and design assets for developers and designers.",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "author": "Melanys Figueredo <hello@melanys.me>",
+  "scripts": {
+    "dev": "concurrently \"next dev\" \"wait-on http://localhost:3000 && open-cli http://localhost:3000\"",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\""
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.11.9",
+    "next": "14.2.15",
+    "react": "^18",
+    "react-copy-to-clipboard": "^5.1.0",
+    "react-dom": "^18",
+    "react-hot-toast": "^2.4.1",
+    "react-icons": "^5.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-copy-to-clipboard": "^5.0.7",
+    "@types/react-dom": "^18",
+    "concurrently": "^9.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.15",
+    "open-cli": "^8.0.0",
+    "postcss": "^8",
+    "prettier": "^3.3.3",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5",
+    "wait-on": "^8.0.1"
+  }
+}

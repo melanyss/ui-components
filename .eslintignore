@@ -1,0 +1,21 @@
+scripts/
+
+# Ignore .env and .env.local files
+.env
+.env.local
+
+# Ignore Next.js build and cache directories
+.next
+
+# Ignore node_modules directory
+node_modules
+
+# Ignore package-lock.json file
+package-lock.json
+
+# Ignore .DS_Store files
+.DS_Store
+
+# Ignore the public/assets folder and subfolders and content
+public/assets
+public/assets/*
