@@ -1,7 +1,4 @@
-# ui
-An open-source collection of UI and web design components
-
-# melanys/ui
+# melanyss/ui-components
 
 An open-source collection of UI and web design components that you can copy and paste into your apps.
 
