@@ -46,7 +46,7 @@ export function Modal({ category, onClose }: ModalProps) {
           animate={{ y: 0, opacity: 1 }}
           exit={{ y: 50, opacity: 0 }}
         >
-          <h2 className="text-2xl font-bold mb-4">{category.title}</h2>
+          <h3 className="text-2xl font-bold mb-4">{category.title}</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {category.items.map((item) => (
               <CopyToClipboard key={item.id} text={item.code} onCopy={() => handleCopy(item.code)}>

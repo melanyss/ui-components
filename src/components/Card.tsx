@@ -13,7 +13,7 @@ interface CardProps {
 export function Card({ title, icon: Icon, onClick }: CardProps) {
   return (
     <motion.div
-      className="rounded-lg shadow-md p-6 cursor-pointer bg-card-bg hover:bg-card-hover transition-colors"
+      className="rounded-lg shadow-md p-6 cursor-pointer bg-card-bg-2 hover:bg-card-hover transition-colors"
       onClick={onClick}
       whileHover={{ y: -5, boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)' }}
     >

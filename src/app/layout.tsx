@@ -6,6 +6,7 @@ import { Toaster } from 'react-hot-toast';
 import Hero from "../components/Hero";
 import EndMsg from "../components/EndMsg";
 import { GoogleTagManagerScript, GoogleTagManagerNoScript } from '../components/GoogleTagManager';
+import HorizontalCard from '../components/HorizontalCard';
 
 const gtmId = process.env.GTM_ID || '';
 
@@ -82,6 +83,7 @@ export default function RootLayout({
           <Hero />
           {children}
           <EndMsg />
+          <HorizontalCard />
         </main>
         <Footer />
         <Toaster />

@@ -2,32 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --bg: #f0f4f8;
-  --background: #ffffff;
-  --foreground: #1a202c;
-  --primary: #3b82f6;
-  --secondary: #10b981;
-  --accent: #f59e0b;
-  --muted: #64748b;
-  --muted-foreground: #4a5568;
-  --border: #e2e8f0;
-  --card-bg: #222;
-  --card-hover: #edf2f7;
-  --end-msg-bg: #ebf8ff;
-  --end-msg-text: #2b6cb0;
-}
-
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #1a202c; 
-    --foreground: #f7fafc;
     --muted-foreground: #a0aec0;
   }
-}
-
-html, body {
-  scroll-behavior: smooth;
 }
 
 @layer utilities {
@@ -36,19 +14,101 @@ html, body {
   }
 }
 
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background;
+  }
+
+  :root {
+   /*  --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 240 5.9% 10%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 10% 3.9%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%; */
+    --radius: 0.5rem;
+    --bg: #f0f4f8;
+    --primary: #3b82f6;
+    --secondary: #10b981;
+    --accent: #f59e0b;
+    --muted: #64748b;
+    --muted-foreground: #4a5568;
+    --border: #e2e8f0;
+    --card-bg: #222;
+    --card-hover: #edf2f7;
+    --end-msg-bg: #ebf8ff;
+    --end-msg-text: #2b6cb0;
+    --foreground: white;
+    --card-bg-2: transparent;
+  }
+
+ /*  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  } */
+}
+
+html,
 body {
-  color: var(--foreground);
+  scroll-behavior: smooth;
+}
+
+body {
   background: var(--bg);
   font-size: 16px;
   line-height: 1.5;
-  background-image: 
-    radial-gradient(at 40% 20%, hsla(28,100%,74%,0.1) 0px, transparent 50%),
-    radial-gradient(at 80% 0%, hsla(189,100%,56%,0.1) 0px, transparent 50%),
-    radial-gradient(at 0% 50%, hsla(355,100%,93%,0.1) 0px, transparent 50%),
-    radial-gradient(at 80% 50%, hsla(340,100%,76%,0.1) 0px, transparent 50%),
-    radial-gradient(at 0% 100%, hsla(22,100%,77%,0.1) 0px, transparent 50%),
-    radial-gradient(at 80% 100%, hsla(242,100%,70%,0.1) 0px, transparent 50%),
-    radial-gradient(at 0% 0%, hsla(343,100%,76%,0.1) 0px, transparent 50%);
+  background-image:
+    radial-gradient(at 40% 20%, hsla(28, 100%, 74%, 0.1) 0px, transparent 50%),
+    radial-gradient(at 80% 0%, hsla(189, 100%, 56%, 0.1) 0px, transparent 50%),
+    radial-gradient(at 0% 50%, hsla(355, 100%, 93%, 0.1) 0px, transparent 50%),
+    radial-gradient(at 80% 50%, hsla(340, 100%, 76%, 0.1) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, hsla(22, 100%, 77%, 0.1) 0px, transparent 50%),
+    radial-gradient(at 80% 100%, hsla(242, 100%, 70%, 0.1) 0px, transparent 50%),
+    radial-gradient(at 0% 0%, hsla(343, 100%, 76%, 0.1) 0px, transparent 50%);
 }
 
 h1 {
@@ -69,10 +129,6 @@ h3 {
   margin-bottom: 0.5rem;
 }
 
-/* p {
-  margin-bottom: 1rem;
-} */
-
 .name-link {
   background: linear-gradient(90deg, #007bff, #1DA1F2);
   -webkit-background-clip: text;
@@ -81,6 +137,53 @@ h3 {
 }
 
 .name-link:hover {
-  color: 007bff;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+.bg-card-bg {
+  background-color: var(--card-bg);
+  color: var(--foreground);
+}
+
+.text-primary {
+  color: var(--primary);
+}
+
+.bg-card-bg-2 {
+  background-color: var(--card-bg-2);
+}
+
+.border-styled {
+  border: 1px solid var(--primary);
+  /* margin: 20px auto; */
+  padding-top: 10px;
+  padding-bottom: 10px;
+} 
+
+.border-styled-2 {
+  border: 1px solid white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+}
+
+.border-styled:hover, .border-styled-2:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.cardImg:hover {
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1.1) rotate(-7deg);
+}
+
+@media (max-width: 768px) {
+  .cardImg {
+    visibility: hidden;
+  }
+
+  .textCta {
+    padding: 15px;
+  }
 }

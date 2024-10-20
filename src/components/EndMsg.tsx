@@ -14,7 +14,7 @@ export default function EndMsg() {
             href="https://github.com/melanyss/ui-components" 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="bg-primary text-white font-bold py-3 px-8 rounded-full text-lg shadow-md ease-in-out hover:scale-110 hover:bg-opacity-90 transition-colors mb-4"
+            className="bg-primary  font-bold py-3 px-8 rounded-full text-lg shadow-md ease-in-out hover:scale-110 hover:bg-opacity-90 transition-colors mb-4"
             >
             Contribute on GitHub
             </Link>

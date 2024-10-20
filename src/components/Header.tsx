@@ -7,7 +7,7 @@ export default function Header() {
         <div className="container mx-auto flex justify-between items-center">
             <h1 className="text-3xl font-bold">
             <Link href="/" className="hover:text-accent transition-colors">
-                Open Source UI Components
+                Open Source Copy-Paste UI & Web Design Components
             </Link>
             </h1>
             <nav>

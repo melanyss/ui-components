@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section className="bg-card-bg text-white py-20 mb-12 rounded-lg shadow-2xl">
       <div className="container mx-auto text-center px-4">
-        <h1 className="text-5xl font-bold mb-6 leading-tight">Open Source UI & Web Design Components</h1>
+        <h1 className="text-5xl font-bold mb-6 leading-tight">Open Source Copy-Paste UI & Web Design Components</h1>
         <h2 className="text-2xl mb-8 font-light">Explore and copy ready-to-use UI components for your next project</h2>
         <p className="text-lg mb-10 max-w-3xl mx-auto">
           This open-source repository is a curated collection of UI components and design assets.
