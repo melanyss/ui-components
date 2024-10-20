@@ -2,7 +2,7 @@
 
 An open-source collection of UI and web design components that you can copy and paste into your apps.
 
-![hero](public/assets/images/og.jpg)
+![hero](public/assets/thumbnail.jpg)
 
 ## Documentation
 
