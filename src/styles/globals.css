@@ -15,9 +15,9 @@
 }
 
 @layer base {
-  * {
+  /* * {
     @apply border-border;
-  }
+  } */
 
   body {
     @apply bg-background;
@@ -91,6 +91,8 @@
     --chart-5: 340 75% 55%;
   } */
 }
+
+/* @import './dynamic-fonts.css'; */
 
 html,
 body {

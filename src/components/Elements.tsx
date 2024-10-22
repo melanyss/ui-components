@@ -2,6 +2,7 @@ import { UIShowcase } from '@/components/UIShowcase'
 import { buttons, gradients } from '@/data/uiElements'
 import { Badge } from '@/components/ui/badge'
 import Link from 'next/link'
+import { motion } from 'framer-motion'
 
 export default function Elements() {
   const categories = ['Buttons', 'Gradients']
@@ -11,11 +12,16 @@ export default function Elements() {
       <div className="flex flex-wrap gap-6 justify-center mb-8">
         {categories.map((category) => (
           <Link key={category} href={`#${category.toLowerCase()}`}>
-            <Badge variant="outline" className="text-xl py-2 px-4 hover:bg-card-bg hover:text-white transition-colors border-styled">
+            <Badge className="text-xl py-2 px-4 hover:bg-card-bg hover:text-white transition-colors border-styled">
               {category}
             </Badge>
           </Link>
         ))}
+        <Link href="/fonts">
+          <Badge className="text-xl py-2 px-4 hover:bg-card-bg hover:text-white transition-colors border-styled">
+            Fonts
+          </Badge>
+        </Link>
       </div>
       <UIShowcase elements={buttons} title="Buttons" />
       <UIShowcase elements={gradients} title="Gradients" />

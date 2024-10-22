@@ -1628,11 +1628,11 @@ export const buttons = [
       <button
         className="relative overflow-hidden border border-[#18181a] text-[#18181a] inline-block text-[15px] leading-[15px] py-[18px] px-[18px_17px] bg-white cursor-pointer select-none"
       >
-        <span className="relative z-10 transition-colors duration-[600ms]">Button 40</span>
-        <span className="absolute bottom-0 left-1/2 top-1/2 transform translate-x-[-50%] translate-y-[225%] h-[14px] leading-[13px] text-white opacity-0 transition-all duration-[500ms] z-20">
+        <span className="relative z-10 transition-colors">Button 40</span>
+        <span className="absolute bottom-0 left-1/2 top-1/2 transform translate-x-[-50%] translate-y-[225%] h-[14px] leading-[13px] text-white opacity-0 transition-all z-20">
           Alternate text
         </span>
-        <span className="absolute bottom-[-50%] left-0 w-full h-full bg-black transform origin-bottom-center skew-y-[9.3deg] scale-y-0 transition-transform duration-[600ms] z-10"></span>
+        <span className="absolute bottom-[-50%] left-0 w-full h-full bg-black transform origin-bottom-center skew-y-[9.3deg] scale-y-0 transition-transform z-10"></span>
       </button>
     ),
   },

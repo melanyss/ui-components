@@ -7,6 +7,7 @@ import Hero from "../components/Hero";
 import EndMsg from "../components/EndMsg";
 import { GoogleTagManagerScript, GoogleTagManagerNoScript } from '../components/GoogleTagManager';
 import HorizontalCard from '../components/HorizontalCard';
+import Head from 'next/head';
 
 const gtmId = process.env.GTM_ID || '';
 
@@ -76,6 +77,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+       <Head>
+                <link rel="icon" href="/favicon.ico" />
+                <link rel="stylesheet" href="/api/fonts" />
+            </Head>
       <GoogleTagManagerScript gtmId={gtmId} />
       <body className={`${karla.variable} font-sans antialiased flex flex-col min-h-screen`}>
       <GoogleTagManagerNoScript gtmId={gtmId} />

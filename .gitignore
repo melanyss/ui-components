@@ -163,3 +163,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# ignore only the private fonts directory
+public/fonts/*
+public/fonts
+# don't ignore the public fonts directory
+!public/google-fonts/
